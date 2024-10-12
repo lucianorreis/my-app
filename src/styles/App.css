@@ -47,3 +47,16 @@ header nav#navbar ul.nav-list {
     list-style: none;
     gap: 0.5rem;
 }
+
+header nav#navbar ul.nav-list li a {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bolder;
+
+    transition: color 0.4s;
+}
+
+header nav#navbar ul.nav-list li a:hover {
+    color: gray;
+    transition: color 0.4s;
+}
