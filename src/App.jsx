@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from './components/Navbar/Navbar'
 
-import './styles/App.css'
 
 //* Componente em classe é uma classe que herda a classe Component do React,
 //* e retorna o HTML dentro do método render()
@@ -11,6 +10,7 @@ class App extends React.Component {
   render() {
     return (
      <Navbar />
+
     );
   }
 }

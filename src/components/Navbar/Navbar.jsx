@@ -1,6 +1,8 @@
 import React from "react";
 import logoImg from '../../assets/logo.jpeg'
 
+import "./styles.css"
+
 class Navbar extends React.Component {
     render(){
         return (
