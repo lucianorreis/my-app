@@ -1,10 +1,11 @@
 import React from "react";
 
 import { Navbar } from "./components/Navbar/Navbar";
-// import { Article } from "./components/Article/Article";
+import { Article } from "./components/Article/Article";
 
 import "./styles/App.css";
 import { Counter } from "./components/Counter/Counter";
+// import { Counter } from "./components/Counter/Counter";
 
 //* Componente em classe é uma classe que herda a classe Component do React,
 //* e retorna o HTML dentro do método render()
@@ -14,7 +15,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Navbar />
+        {/* <Navbar /> */}
         <Counter />
         {/* <section id="articles">
           <Article

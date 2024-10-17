@@ -1,34 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 
-export class Counter extends React.Component {
-  constructor() {
-    super();
-    // this.contador = 0;
-    this.state = { contador: 0 };
-  }
-
-  render() {
+export function Counter() {
+  const [Contador, setContador] = useState(0);
     return (
-      <div
-        style={{
-          marginTop: "20px",
-          marginLeft: "20px",
-        }}
-      >
-        <h1>{this.state.contador}</h1>
-
+      <div style={{marginTop: "20px",marginLeft: "20px" }}>
+        <h1>{Contador}</h1>
         <div>
             <button
-                onClick={() => {
-                    //! this.state.contador -= 1
-                    this.setState({ contador: this.state.contador - 1 });
+              onClick={() => {
+                //! this.state.contador -= 1
+                setContador(Contador - 1)
             }}
             >
                 Diminuir
             </button>
             <button
-                onClick={() => {
-                    this.setState({ contador: this.state.contador + 1 });
+              onClick={() => {
+                setContador(Contador + 1)
                 }}
             >
                 Aumentar
@@ -37,4 +25,3 @@ export class Counter extends React.Component {
       </div>
     );
   }
-}

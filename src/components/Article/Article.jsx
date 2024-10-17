@@ -4,19 +4,17 @@ import articleImg from '../../assets/Article.png'
 
 import './styles.css'
 
-export class Article extends React.Component {
-  render() {
+export function Article(props){
     return (
       <article id="article">
         <img src={articleImg} alt="" />
 
         <div className="article-infos">
-          <h2>{this.props.title}</h2>
-          <h3>{this.props.provider}</h3>
+          <h2>{props.title}</h2>
+          <h3>{props.provider}</h3>
 
-          <p>{this.props.description}</p>
+          <p>{props.description}</p>
         </div>
       </article>
     );
   }
-}
