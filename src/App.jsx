@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Navbar } from "./components/Navbar/Navbar";
-import { Article } from "./components/Article/Article";
+// import { Navbar } from "./components/Navbar/Navbar";
+// import { Article } from "./components/Article/Article";
 
 import "./styles/App.css";
 import { Counter } from "./components/Counter/Counter";
